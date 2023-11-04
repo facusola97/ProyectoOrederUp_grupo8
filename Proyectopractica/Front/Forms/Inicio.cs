@@ -94,5 +94,10 @@ namespace Front
             inicio.Show();
             this.Hide();
         }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            Principal.context.Database.EnsureCreated();
+        }
     }
 }

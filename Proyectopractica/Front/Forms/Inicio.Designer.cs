@@ -52,7 +52,7 @@
             label1.ForeColor = SystemColors.ControlLight;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(129, 29);
+            label1.Size = new Size(160, 35);
             label1.TabIndex = 0;
             label1.Text = "ORDER UP";
             // 
@@ -60,9 +60,10 @@
             // 
             button1.BackColor = Color.IndianRed;
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(28, 78);
+            button1.Location = new Point(32, 104);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(138, 215);
+            button1.Size = new Size(158, 287);
             button1.TabIndex = 3;
             button1.Text = "Comprar";
             button1.UseVisualStyleBackColor = false;
@@ -75,25 +76,28 @@
             panel1.Controls.Add(button1);
             panel1.Font = new Font("Sitka Small", 18F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.Location = new Point(0, 1);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(192, 449);
+            panel1.Size = new Size(219, 599);
             panel1.TabIndex = 10;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(192, 1);
+            pictureBox2.Location = new Point(219, 1);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(631, 293);
+            pictureBox2.Size = new Size(721, 391);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 11;
             pictureBox2.TabStop = false;
             // 
             // button3
             // 
-            button3.Location = new Point(682, 405);
+            button3.Location = new Point(779, 540);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(86, 31);
             button3.TabIndex = 25;
             button3.Text = "Registrar";
             button3.UseVisualStyleBackColor = true;
@@ -101,9 +105,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(601, 405);
+            button2.Location = new Point(687, 540);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(86, 31);
             button2.TabIndex = 24;
             button2.Text = "Iniciar";
             button2.UseVisualStyleBackColor = true;
@@ -112,33 +117,35 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(352, 340);
+            label5.Location = new Point(402, 453);
             label5.Name = "label5";
-            label5.Size = new Size(67, 15);
+            label5.Size = new Size(83, 20);
             label5.TabIndex = 23;
             label5.Text = "Contraseña";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(215, 343);
+            label4.Location = new Point(246, 457);
             label4.Name = "label4";
-            label4.Size = new Size(47, 15);
+            label4.Size = new Size(59, 20);
             label4.TabIndex = 22;
             label4.Text = "Usuario";
             // 
             // txtContraseña1
             // 
-            txtContraseña1.Location = new Point(352, 369);
+            txtContraseña1.Location = new Point(402, 492);
+            txtContraseña1.Margin = new Padding(3, 4, 3, 4);
             txtContraseña1.Name = "txtContraseña1";
-            txtContraseña1.Size = new Size(100, 23);
+            txtContraseña1.Size = new Size(114, 27);
             txtContraseña1.TabIndex = 21;
             // 
             // txtUsuario1
             // 
-            txtUsuario1.Location = new Point(215, 369);
+            txtUsuario1.Location = new Point(246, 492);
+            txtUsuario1.Margin = new Padding(3, 4, 3, 4);
             txtUsuario1.Name = "txtUsuario1";
-            txtUsuario1.Size = new Size(100, 23);
+            txtUsuario1.Size = new Size(114, 27);
             txtUsuario1.TabIndex = 20;
             // 
             // label3
@@ -146,18 +153,18 @@
             label3.AutoSize = true;
             label3.BackColor = SystemColors.ActiveCaptionText;
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(215, 309);
+            label3.Location = new Point(246, 412);
             label3.Name = "label3";
-            label3.Size = new Size(144, 15);
+            label3.Size = new Size(184, 20);
             label3.TabIndex = 19;
             label3.Text = "SECTOR ADMINISTRADOR";
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label5);
@@ -167,8 +174,10 @@
             Controls.Add(label3);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Inicio";
             Text = "Inicio";
+            Load += Inicio_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

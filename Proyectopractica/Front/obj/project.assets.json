@@ -3445,23 +3445,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Users\\herna\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Proyectopractica\\Front\\Front.csproj",
+      "projectUniqueName": "C:\\Users\\herna\\OneDrive\\Documentos\\GitHub\\ProyectoOrederUp_grupo8\\Proyectopractica\\Front\\Front.csproj",
       "projectName": "Front",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\Proyectopractica\\Front\\Front.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\Proyectopractica\\Front\\obj\\",
+      "projectPath": "C:\\Users\\herna\\OneDrive\\Documentos\\GitHub\\ProyectoOrederUp_grupo8\\Proyectopractica\\Front\\Front.csproj",
+      "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\herna\\OneDrive\\Documentos\\GitHub\\ProyectoOrederUp_grupo8\\Proyectopractica\\Front\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\herna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3477,8 +3477,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\USER\\source\\repos\\Proyectopractica\\Back\\Back.csproj": {
-              "projectPath": "C:\\Users\\USER\\source\\repos\\Proyectopractica\\Back\\Back.csproj"
+            "C:\\Users\\herna\\OneDrive\\Documentos\\GitHub\\ProyectoOrederUp_grupo8\\Proyectopractica\\Back\\Back.csproj": {
+              "projectPath": "C:\\Users\\herna\\OneDrive\\Documentos\\GitHub\\ProyectoOrederUp_grupo8\\Proyectopractica\\Back\\Back.csproj"
             }
           }
         }
