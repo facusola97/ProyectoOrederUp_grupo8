@@ -17,11 +17,30 @@ namespace Back.Clases
         public decimal Precio { get; set; }
         public int Cantidad { get; set; }
 
+        public List<IngredienteOpcion> ingredientes { get; set; }   = new List<IngredienteOpcion>();
+
 
         public override string ToString()
         {
            return this.Nombre + " " + this.Precio;
         }
+        
+        public List<Ingredientes> GetIngredientes()
+        {
+            List<Ingredientes> ingredientes = new List<Ingredientes>();
+           
+            foreach(IngredienteOpcion io in Principal.context.ingredientesOpciones.ToList())
+            {
+               if( io.IdOpcion == this.IdOpcion)
+                {
+                    ingredientes.Add(Principal.context.ingredientes.Find(io.IdIngrediente));
+                }
+            }
 
+           return ingredientes;
+
+
+
+        }
     }
 }

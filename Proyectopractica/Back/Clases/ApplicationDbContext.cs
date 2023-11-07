@@ -12,13 +12,20 @@ namespace Back.Clases
         public DbSet<Ingredientes> ingredientes { get; set; }
         public DbSet<Opcion> opciones { get; set; }    
         public DbSet<Pedido> pedidos { get; set; }
-        public DbSet<Reporte> reporte { get; set; }
+
         public DbSet<Usuario> usuarios { get; set; }
+
+        public DbSet<IngredienteOpcion> ingredientesOpciones { get; set; }  
+
+
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=LAPTOP-LCHL84OT\\SQLEXPRESS;database=ProyectoPractica;trusted_connection=true;Encrypt=False");
+            optionsBuilder.UseSqlServer("server=DESKTOP-4U7JAH5\\SQLEXPRESS;database=ProyectoPractica;trusted_connection=true;Encrypt=False");
         }
+
+       
 
 
     }

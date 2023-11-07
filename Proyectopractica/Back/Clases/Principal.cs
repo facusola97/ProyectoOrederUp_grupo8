@@ -11,7 +11,7 @@ namespace Back.Clases
     {
         public static ApplicationDbContext context = new ApplicationDbContext();
 
-        public static void AgregarOpcion(string nombre, string tipo, string descripcion,decimal precio, int cantidad)
+        public static Opcion AgregarOpcion(string nombre, string tipo, string descripcion,decimal precio, int cantidad)
         {
             Opcion opciones = new Opcion()
             {
@@ -25,6 +25,7 @@ namespace Back.Clases
 
             context.opciones.Add(opciones);
             context.SaveChanges();
+            return opciones;
 
         }
         public static void EliminarOpcion(int id)

@@ -14,6 +14,13 @@ namespace Back.Clases
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public decimal Precio { get; set; }
+        
+        public List<IngredienteOpcion> opciones { get; set; }  = new List<IngredienteOpcion>();
+
+        public override string ToString()
+        {
+            return this.Nombre + " " + this.Precio;
+        }
 
     }
 }

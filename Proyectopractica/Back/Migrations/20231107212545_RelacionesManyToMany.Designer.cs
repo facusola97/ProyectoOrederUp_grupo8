@@ -4,6 +4,7 @@ using Back.Clases;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Back.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231107212545_RelacionesManyToMany")]
+    partial class RelacionesManyToMany
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,17 +33,17 @@ namespace Back.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIngredienteopcion"));
 
-                    b.Property<int>("IdIngrediente")
+                    b.Property<int>("IngredientesIdIngredientes")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdOpcion")
+                    b.Property<int>("OpcionIdOpcion")
                         .HasColumnType("int");
 
                     b.HasKey("IdIngredienteopcion");
 
-                    b.HasIndex("IdIngrediente");
+                    b.HasIndex("IngredientesIdIngredientes");
 
-                    b.HasIndex("IdOpcion");
+                    b.HasIndex("OpcionIdOpcion");
 
                     b.ToTable("ingredientesOpciones");
                 });
@@ -147,13 +150,13 @@ namespace Back.Migrations
                 {
                     b.HasOne("Back.Clases.Ingredientes", "Ingredientes")
                         .WithMany("opciones")
-                        .HasForeignKey("IdIngrediente")
+                        .HasForeignKey("IngredientesIdIngredientes")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Back.Clases.Opcion", "Opcion")
                         .WithMany("ingredientes")
-                        .HasForeignKey("IdOpcion")
+                        .HasForeignKey("OpcionIdOpcion")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

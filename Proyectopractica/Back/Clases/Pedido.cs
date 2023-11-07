@@ -14,5 +14,8 @@ namespace Back.Clases
         public DateTime Fecha { get; set; }
         public bool Cargado { get; set; }
         public int cantidad { get; set; }
+
+
+        
     }
 }
