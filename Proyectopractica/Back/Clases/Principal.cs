@@ -35,7 +35,7 @@ namespace Back.Clases
             }
         }
 
-        
+
         public static void ModificarUsuario ( int id, string nuevoNombre, string nuevaContraseña )
         {
             Usuario usuario = context.usuarios.Find (id);
@@ -84,7 +84,7 @@ namespace Back.Clases
             context.opciones.Remove (opcion);
             context.SaveChanges ();
         }
-       
+
         //                          Métodos Ingredientes 
         public static Ingredientes AgregarIngredientes ( string nombre, string descripcion, decimal precio )
         {
@@ -140,7 +140,7 @@ namespace Back.Clases
             return pedido;
         }
 
-        
+
         public static void EliminarPedido ( int id )
         {
             Pedido pedido = context.pedidos.Find (id);
@@ -151,7 +151,7 @@ namespace Back.Clases
             }
         }
 
-        
+
         public static void ModificarPedido ( int id, DateTime fecha, bool cargado, int cantidad )
         {
             Pedido pedido = context.pedidos.Find (id);
@@ -169,4 +169,6 @@ namespace Back.Clases
 
 
         }
+    }
+
 }
